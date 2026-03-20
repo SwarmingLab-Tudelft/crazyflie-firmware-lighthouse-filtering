@@ -838,6 +838,49 @@ LOG_ADD(LOG_FLOAT, angle1x_0lh2, &angles.baseStationMeasurementsLh2[1].sensorMea
 LOG_ADD(LOG_FLOAT, angle1y_0lh2, &angles.baseStationMeasurementsLh2[1].sensorMeasurements[0].correctedAngles[1])
 
 /**
+ * @brief The V2 angle received by sensor 0, corrected using calibration data [rad]
+ *
+ * | Base station type | V2 |\n
+ * | Channel | 3 |\n
+ * | Sweep | 1 |\n
+ * | Sensor | 0 |\n
+ */
+
+LOG_ADD(LOG_FLOAT, angle2x_0lh2, &angles.baseStationMeasurementsLh2[2].sensorMeasurements[0].correctedAngles[0])
+
+/**
+ * @brief The V2 angle received by sensor 0, corrected using calibration data [rad]
+ *
+ * | Base station type | V2 |\n
+ * | Channel | 3 |\n
+ * | Sweep | 2 |\n
+ * | Sensor | 0 |\n
+ */
+
+ LOG_ADD(LOG_FLOAT, angle2y_0lh2, &angles.baseStationMeasurementsLh2[2].sensorMeasurements[0].correctedAngles[1])
+
+ /**
+  * @brief The V2 angle received by sensor 0, corrected using calibration data [rad]
+  * 
+  * | Base station type | V2 |\n
+  * | Channel | 4 |\n
+  * | Sweep | 1 |\n
+  * | Sensor | 0 |\n
+  */
+
+  LOG_ADD(LOG_FLOAT, angle3x_0lh2, &angles.baseStationMeasurementsLh2[3].sensorMeasurements[0].correctedAngles[0])
+
+/**
+ * @brief The V2 angle received by sensor 0, corrected using calibration data [rad]
+ *
+ * | Base station type | V2 |\n
+ * | Channel | 4 |\n
+ * | Sweep | 2 |\n
+ * | Sensor | 0 |\n
+ */
+LOG_ADD(LOG_FLOAT, angle3y_0lh2, &angles.baseStationMeasurementsLh2[3].sensorMeasurements[0].correctedAngles[1])
+
+/**
  * @brief Rate of frames from the Lighthouse deck on the serial buss [1/s]
  */
 STATS_CNT_RATE_LOG_ADD_DEBUG(serRt, &serialFrameRate)
